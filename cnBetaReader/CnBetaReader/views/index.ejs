@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+        <title>
+            cnBeta.COM - 移动版
+        </title>
+        <meta http-equiv="Cache-Control" content="max-age=3600" />
+        <meta name="MobileOptimized" content="240" />
+        <meta name="apple-touch-fullscreen" content="YES" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="keywords" content="" />
+        <meta name="description" content=""  />
+        <script src="js/jquery-1.9.1.min.js?20140102" charset="utf-8">
+        </script>
+        <link rel="stylesheet" type="text/css" href="css/m.css?20140102" />
+        <link rel="stylesheet" type="text/css" href="css/m2.css?20140102" />
+        <style type="text/css">
+            .adslot_1 { width: 320px; height: 100px; } @media (min-width:500px) {
+            .adslot_1 { width: 468px; height: 60px; } } @media (min-width:800px) {
+            .adslot_1 { width: 728px; height: 90px; } }
+        </style>
+    </head>
+    
+    <body class="cnbeta">
+        <div class="ui-body-c" data-role="page" id="page_index">
+            <div class="ui-header ui-bar-a" data-role="header">
+                <div class="header_top">
+                    <div class="header_top_logo">
+                        <a href="/">
+                            <img title="中文业界资讯站_cnBeta.COM" alt="cnBeta.COM" src="images/navigationBarLogo@2x.png"
+                            width="108px" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- /header-->
+            <div data-role="content">
+                <div class="module" id="realtime">
+                    <ul class="module_list">
+						<%if (list.length > 0) {%>
+                        <% for (var i = 0, len = list.length; i < len; i++) {%>
+                        <li>
+                            <div style="width:90%">
+								<!--<%=list[i].link%>-->
+                                <a href="/news?url=<%=list[i].link%>" data-transition="slide"><%=list[i].id%>.<%= list[i].title%></a>
+                            </div>
+                            <em class="list_ico">
+                                <i class="ico_time">
+                                    <%=list[i].pubDate %>
+                                </i>
+                            </em>
+                        </li>
+                        <%}%>
+                        <%}%>
+                    </ul>
+                </div>
+            </div>
+			<div>
+			<input type="button" value="显示原始rss" onclick="showRSS();"/>
+				<div style="display: block;" id="rulesformitem" class="formitem">
+					<div class="textwrapper"><textarea id="ta1" rows="25" style="display:none;with:100%;"><%=source%></textarea></div>
+				</div>
+			</div>
+            <div style="text-align:center">
+            </div>
+			 <div class="footer" data-role="footer">
+                <div class="footer_top">
+                    <a class="j_backTop gotop" href="javascript:scroll(0,0)" mce_href="javascript:scroll(0,0)">
+                        Top
+                    </a>
+                </div>
+                <div class="footer_version">
+                    <a href="/m?pinned=wap">
+                        文字版
+                    </a>
+                    <a class="cur">
+                        触屏版
+                    </a>
+                    <a href='/cnbeta'>
+                        电脑端
+                    </a>
+                </div>
+                <div class="footer_consult">
+                </div>
+                <div class="footer_bottom">
+                    <p>
+                        &copy; 2003-2014
+                    </p>
+                </div>
+            </div>
+        </div>
+		<script type="text/javascript">
+			function showRSS(){
+				var s=document.getElementById('ta1').style.display;
+				if(s==="block"){
+					document.getElementById('ta1').style.display="none";
+				}else{
+					document.getElementById('ta1').style.display="block";
+				}
+			}
+		</script>
+        <script language=javascript>
+            function getCookie(name) {
+                var arr = document.cookie.match(new RegExp("(^| )" + name + "=([^;]*)(;|$)"));
+                if (arr != null) return unescape(arr[2]);
+                return null;
+            }
+            var defaultModule = getCookie('defaultModule');
+            if (defaultModule == 'wap') {
+                this.location = '/?pinned=wap';
+            } else if (defaultModule == 'm') {
+                $(".setDefault").hide()
+            }
+        </script>
+        <script src="js/init.js?20140102" charset="utf-8">
+        </script>
+        <script type="text/javascript">
+            _uacct = "UA-435607-2";
+            urchinTracker();
+        </script>
+    </body>
+
+</html>

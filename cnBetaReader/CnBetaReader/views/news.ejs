@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+        <title><%=title%></title>
+        <meta http-equiv="Cache-Control" content="max-age=3600" />
+        <meta name="MobileOptimized" content="240" />
+        <meta name="apple-touch-fullscreen" content="YES" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="keywords" content="数码,通信,互联网,手机,业界,科技,媒体,资讯,IT新闻,言论平台,CB,cnBeta,移动版" />
+        <meta name="description" content="cnBeta.COM 移动版，为您带来即时、快速、完整的科技资讯体验。" />
+        <script src="js/jquery-1.9.1.min.js?20140102" charset="utf-8"></script>
+        <link rel="stylesheet" type="text/css" href="css/m.css?20140102" />
+        <style type="text/css">
+            .adslot_1 { width: 320px; height: 100px; } @media (min-width:500px) {
+            .adslot_1 { width: 468px; height: 60px; } } @media (min-width:800px) {
+            .adslot_1 { width: 728px; height: 90px; } }
+        </style>
+    </head>
+    
+    <body class="cnbeta">
+        <div class="ui-body-c" data-role="page" id="page_view">
+            <div class="ui-header ui-bar-a" data-role="header">
+                <div class="header_top">
+                    <div class="back">
+                        <a class="ui-link" title="首页" data-rel="back" href="javascript:history.back();">
+                            <span>
+                                返回
+                            </span>
+                        </a>
+                    </div>
+                    <div class="header_top_logo">
+                        <a class="ui-link" href="javacript:void(0);">
+                            资讯正文
+                        </a>
+                    </div>
+                    <a title="首页" href="/">
+                        <div class="home">
+                            <i>
+                            </i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- /header-->
+            <div data-role="content">
+                <article id="content_287001" class="article-holder">
+                    <header class="article-hd">
+                        <h1 class="article-tit">
+                            <%=title%>
+                        </h1>
+                        <p class="article-byline">
+                            <a class="commnum" href="http://m.cnbeta.com/comments_287001.htm"><i></i>1</a>
+                            <span><%=where%>&nbsp;&nbsp;</span>
+                            <time class="time">2014-04-27 21:33:43</time>
+                        </p>
+                    </header>
+                    <div class="article-summ">
+                        <b>
+                            摘要：
+                        </b>
+                       <%=introduction%>
+                    </div>
+                    <div class="articleCont">
+                       <%- content%>
+					   <br/>
+					   原文连接：<a href='<%=url%>' target="_blank"><%=url%></a>
+                    </div>
+                </article>
+            </div>
+            <!-- /content-->
+            <div class="footer" data-role="footer">
+                <div class="footer_top">
+                    <a class="j_backTop gotop" href="javascript:scroll(0,0)" mce_href="javascript:scroll(0,0)">
+                        Top
+                    </a>
+                </div>
+                <div class="footer_version">
+                    <a href="/m?pinned=wap">
+                        文字版
+                    </a>
+                    <a class="cur">
+                        触屏版
+                    </a>
+                    <a href='/cnbeta'>
+                        电脑端
+                    </a>
+                </div>
+                <div class="footer_consult">
+                </div>
+                <div class="footer_bottom">
+                    <p>
+                        &copy; 2003-2014
+                    </p>
+                </div>
+            </div>
+            <!-- /footer-->
+        </div>
+        <script src="js/init.js?20140102" charset="utf-8">
+        </script>
+        <script charset="utf-8" type="text/javascript">
+            //<![CDATA[
+            jQuery(function($) {
+                $("#content_287001").imgAutoSize();
+            });
+            //]]>
+            
+        </script>
+        <script type="text/javascript">
+            _uacct = "UA-435607-2";
+            urchinTracker();
+        </script>
+    </body>
+
+</html>

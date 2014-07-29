@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>ExpressApp7</Name>
+    <RootNamespace>ExpressApp7</RootNamespace>
+    <NodeExePath />
+    <NodeExeArguments />
+    <ScriptArguments />
+    <StartWebBrowser>True</StartWebBrowser>
+    <LaunchUrl>http://127.0.0.1:1337/</LaunchUrl>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>83aac9f6-1094-40fc-8ce9-2ca0fe8ccbac</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>app.js</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <ProjectView>ShowAllFiles</ProjectView>
+    <NodejsPort>1337</NodejsPort>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="app.js" />
+    <Compile Include="lib\confighelper.js" />
+    <Compile Include="lib\db.js" />
+    <Compile Include="lib\HttpHelper.js" />
+    <Compile Include="lib\log.js" />
+    <Compile Include="lib\rss.js" />
+    <Compile Include="lib\tracer.js" />
+    <Compile Include="lib\weather.js" />
+    <Compile Include="public\javascripts\ajaxmanager.js" />
+    <Compile Include="public\javascripts\core.js" />
+    <Compile Include="public\javascripts\jquery-1.3.js" />
+    <Compile Include="public\javascripts\jquery.js" />
+    <Compile Include="public\javascripts\json.js" />
+    <Compile Include="public\js\init.js" />
+    <Compile Include="public\js\jquery-1.9.1.min.js" />
+    <Compile Include="routes\index.js" />
+    <Compile Include="routes\news.js" />
+    <Content Include="config\config.json" />
+    <Content Include="lib\parse.js.bak" />
+    <Content Include="package.json" />
+    <Content Include="public\css\images\footer_bg.png" />
+    <Content Include="public\css\images\home_back.png" />
+    <Content Include="public\css\images\home_icobg.png" />
+    <Content Include="public\css\images\imgpholder%402x.png" />
+    <Content Include="public\css\images\navbar_bg.png" />
+    <Content Include="public\css\images\navigationBarLogo%402x.png" />
+    <Content Include="public\css\m.css" />
+    <Content Include="public\css\m2.css" />
+    <Content Include="public\images\btn_bg.png" />
+    <Content Include="public\images\navigationBarLogo%402x.png" />
+    <Content Include="public\images\preferences-break.png" />
+    <Content Include="public\images\s_btn_bg.png" />
+    <Content Include="public\img\glyphicons-halflings-white.png" />
+    <Content Include="public\img\glyphicons-halflings.png" />
+    <Content Include="public\manager.json" />
+    <Content Include="public\stylesheets\style.css" />
+    <Content Include="public\stylesheets\style.less" />
+    <Content Include="README.md" />
+    <Content Include="views\index.ejs" />
+    <Content Include="views\news.ejs" />
+    <Content Include="web.config.bak" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="config\" />
+    <Folder Include="lib\" />
+    <Folder Include="logs\" />
+    <Folder Include="public\" />
+    <Folder Include="public\css\" />
+    <Folder Include="public\css\images\" />
+    <Folder Include="public\images\" />
+    <Folder Include="public\img\" />
+    <Folder Include="public\javascripts\" />
+    <Folder Include="public\js\" />
+    <Folder Include="public\stylesheets\" />
+    <Folder Include="routes\" />
+    <Folder Include="views\" />
+  </ItemGroup>
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
