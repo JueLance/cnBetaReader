@@ -1,12 +1,12 @@
 {
-	"proxy":"http://web-proxy.cup.hp.com:8088",
+	"proxy":"",
 	"database":{
-	    "dbName" : "mixi",
+	    "dbName" : "cnbeta",
 		"uName" : "test",
 		"uPwd" : "262633",
 		"dbHost" : "127.0.0.1",
 		"dbPort" : 3306,
-		"secretName":"__mixi__"
+		"secretName":"__cnbeta__"
 	},
 	"test":""
 }
